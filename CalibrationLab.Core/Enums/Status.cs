@@ -8,8 +8,8 @@ namespace CalibrationLab.Core.Enums
 {
     public enum Status
     {
+        Passive,
         Active,
-        Updated,
-        Passive
+        Updated
     }
 }

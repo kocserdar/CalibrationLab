@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalibrationLab.Core.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace CalibrationLab.Core.Concrete
 {
-    public class Parameter
+    public class Parameter:Base
     {
-        public int? No {  get; set; }
-        
         public string? Description { get; set; }
         
         public string? ReferenceDocument { get; set; }
@@ -20,5 +19,13 @@ namespace CalibrationLab.Core.Concrete
 
         public int? PointCount { get; set; }
 
+        //Navigation
+        public int? ScopeId { get; set;}
+
+        public Scope? Scope { get; set; }
+
+        public virtual int? DeviceId { get; set; }
+
+        public virtual Device? Device { get; set; }
     }
 }

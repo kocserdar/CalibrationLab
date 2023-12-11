@@ -12,14 +12,14 @@ namespace CalibrationLab.Core.Abstract
     {
         public int Id { get; set; }
 
-        public string Code { get; set; }
+        public string? Code { get; set; }
         
         public DateTime CreatedAt { get; set; } 
         
-        public DateTime LastUpdatedAt { get; set; }
+        public DateTime? LastUpdatedAt { get; set; }
         
-        public DateTime PassivatedAt { get; set; }
+        public DateTime? PassivatedAt { get; set; }
 
-        public Status Status { get; set; }
+        public Status Status { get; set; } = Status.Active;
     }
 }

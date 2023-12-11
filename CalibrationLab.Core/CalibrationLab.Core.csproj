@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="HelperClasses\" />
     <Folder Include="Marker\" />
   </ItemGroup>
 

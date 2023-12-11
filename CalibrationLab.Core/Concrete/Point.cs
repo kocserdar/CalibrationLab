@@ -1,4 +1,5 @@
-﻿using CalibrationLab.Core.Enums;
+﻿using CalibrationLab.Core.Abstract;
+using CalibrationLab.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CalibrationLab.Core.Concrete
 {
-    public class Point
+    public class Point:Base
     {
         public string? Description { get; set; }
 
